@@ -1,4 +1,5 @@
 ﻿using Api.Database.Entity.Threats;
+using Api.Database.Postgre.Constants;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -26,7 +27,6 @@ internal class StatusConfiguration : IEntityTypeConfiguration<Status>
             new Status { Id = 1, Name = "Active", Description = "A current active threat" },
             new Status { Id = 2, Name = "Malign", Description = "Highly dangerous threat" },
             new Status { Id = 3, Name = "Benign", Description = "Active threat but not known to harmful" }
-
         );
     }
 }

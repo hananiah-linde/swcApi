@@ -1,11 +1,11 @@
 ﻿namespace Api.Database.Entity.Threats;
 
-public class Status
+public class Type
 {
-    public Status()
+    public Type()
     {
-    }
 
+    }
     public int Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
